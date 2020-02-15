@@ -1,4 +1,4 @@
 module.exports = {
-  mongoURI:
-    "mongodb://jesus:123456a@ds011422.mlab.com:11422/jwtauthenticationapi"
+  mongoURI: "mongodb://localhost:27017/jwtautheticationapi"
+  //mongodb://jesus:123456@localhost:27017/jwtautheticationapi
 };

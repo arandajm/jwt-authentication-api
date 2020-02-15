@@ -1,6 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
+const users = require("./routes/api/users");
+
 const app = express();
 
 // DB config keys
@@ -15,6 +17,9 @@ mongoose
 app.get("/", (req, res) => {
   res.send("Hello!!");
 });
+
+// Use Routes
+app.use("/api/users", users);
 
 //Heroku port set process.env.PORT, default 5000;
 const port = process.env.PORT || 5000;
